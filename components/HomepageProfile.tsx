@@ -15,7 +15,7 @@ interface SidebarProps {
 
 const HomepageProfile: React.FC<SidebarProps> = ({ isHidden, toggleSidebar }) => {
   const socialIcons = [
-    { icon: MdPublic, label: "Public", weblink: 'https://networkenginerprotfoliowebsite.onrender.com' },
+    { icon: MdPublic, label: "Public", weblink: '/' },
     { icon: MdEmail,  label: "Email"  , weblink:'mailto:sarowarhosen1101@gmail.com'},
     { icon: FaGithub, label: "Github" , weblink : 'https://github.com/sarowarhosen01' },
   ];
