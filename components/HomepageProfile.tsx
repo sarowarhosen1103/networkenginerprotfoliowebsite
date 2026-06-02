@@ -2,6 +2,7 @@
 
 import React from "react";
 import { MdPublic, MdCode, MdEmail, MdRssFeed, MdKeyboardDoubleArrowDown } from 'react-icons/md';
+import { FaGithub } from "react-icons/fa";
 import SidebarStats from "./SidebarStats";
 import SidebarSocials from "./SidebarSocials";
 import Image from 'next/image'
@@ -14,10 +15,9 @@ interface SidebarProps {
 
 const HomepageProfile: React.FC<SidebarProps> = ({ isHidden, toggleSidebar }) => {
   const socialIcons = [
-    { icon: MdPublic, label: "Public" },
-    { icon: MdCode, label: "Code" },
-    { icon: MdEmail, label: "Email" },
-    { icon: MdRssFeed, label: "Feed" },
+    { icon: MdPublic, label: "Public", weblink: 'https://networkenginerprotfoliowebsite.onrender.com' },
+    { icon: MdEmail,  label: "Email"  , weblink:'mailto:sarowarhosen1101@gmail.com'},
+    { icon: FaGithub, label: "Github" , weblink : 'https://github.com/sarowarhosen01' },
   ];
 
   const technicalStats = [
@@ -70,6 +70,7 @@ const HomepageProfile: React.FC<SidebarProps> = ({ isHidden, toggleSidebar }) =>
               // src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnT56_j5c14fuoo1THtrM-RYFGqpom_7LDDuWwuX1EXuFYwlkhCz3cAzQn6tVxFc5KiO9nDhKJwgn8yYQ7cQHm73Rim4J-_gRYYoa6rgfLSGujlOGz6LMc0KjdSdMjSPdmigPisHrlUJDZ6mdiR---lvl2ct4DsWnvTE92AbOtLDuCPSIAE9W77n5p0KA6ReAEvLDJWnuQJf2SG6Q46utX7oQ39nNpQyR0by71A3kbldWWXvN2dUbe4UIQ3jq_RWuF3wSfNEvH7Ald"
             /> */}
             <Image src={'/photo/sarowar-hosen.jpg'} alt="sarowar hosen" width={100} height={100} className="h-full w-full object-cover rounded-full self-center" />
+            <img className="w-full h-[100px]  object-cover" alt="Sarowar Hosen Portrait" src="/photo/sarowar-hosen.jpg"/>
           </div>
           <div className="absolute bottom-0 right-0 h-3 w-3 bg-secondary-fixed rounded-full border-2 border-surface animate-pulse"></div>
         </div>
